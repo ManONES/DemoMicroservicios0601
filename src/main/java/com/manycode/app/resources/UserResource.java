@@ -29,12 +29,20 @@ public class UserResource {
 			    LOG.info("intento:" + iii);
 	            if (iii==1974) { break;}
 	        }
-		}        	
-				
+		}
 		
+    	int iv = 0;
+		for (int ii = 0; ii < 10000; ii++) {
+	       
+			    iv = iv + Integer.valueOf(iniciodos());
+			    LOG.info("intento:" + 11);
+	           
+	       
+		}       
+				
     	
         User userRating = new User();
-        userRating.initData(userId + ":" +iii + ":::" + iniciodos());
+        userRating.initData(userId + ":" +iii + ":::" );
         return userRating;
     }
     
