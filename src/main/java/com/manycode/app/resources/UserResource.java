@@ -23,16 +23,16 @@ public class UserResource {
     @RequestMapping("/user/{userId}")
     public User getUserRatings(@PathVariable("userId") String userId) {
     	int iii = 0;
-		for (int ii = 0; ii < 10; ii++) {
+		for (int ii = 0; ii < 2; ii++) {
 	        while (true) {
-			    iii =getRandomNumberInRange(1, 2000);
+			    iii =getRandomNumberInRange(1000, 2000);
 			    LOG.info("intento:" + iii);
 	            if (iii==1974) { break;}
 	        }
 		}
 		
     	int iv = 0;
-		for (int ii = 0; ii < 10000; ii++) {
+		for (int ii = 0; ii < 100; ii++) {
 	       
 			    iv = iv + Integer.valueOf(iniciodos());
 			    LOG.info("intento:" + ii);
