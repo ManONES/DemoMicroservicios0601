@@ -22,7 +22,7 @@ public class UserResource {
 
     @RequestMapping("/user/{userId}")
     public User getUserRatings(@PathVariable("userId") String userId) {
-    	int iii = 0;      
+    	int iii = 0;
 		for (int ii = 0; ii < 10; ii++) {
 	        while (true) {
 			    iii =getRandomNumberInRange(1, 2000);
@@ -31,10 +31,10 @@ public class UserResource {
 	        }
 		}        	
 				
-		iniciodos();
+		
     	
         User userRating = new User();
-        userRating.initData(userId + ":" +iii);
+        userRating.initData(userId + ":" +iii + ":::" + iniciodos());
         return userRating;
     }
     
