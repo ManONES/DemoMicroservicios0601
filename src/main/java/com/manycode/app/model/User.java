@@ -14,7 +14,7 @@ public class User {
 
 
     public void initData(String userId) {
-        this.setUserId(userId + " Bienvenido al mundo de los microservicios version uno");
+        this.setUserId(userId);
 
     }
 }

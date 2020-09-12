@@ -35,15 +35,15 @@ public class UserResource {
 		for (int ii = 0; ii < 10000; ii++) {
 	       
 			    iv = iv + Integer.valueOf(iniciodos());
-			    LOG.info("intento:" + 11);
+			    LOG.info("intento:" + ii);
 	           
 	       
 		}       
 				
     	
-        User userRating = new User();
-        userRating.initData(userId + ":" +iii + ":::" );
-        return userRating;
+        User userRating2 = new User();
+        userRating2.initData(userId + ":" +iii + ":::" + iv);
+        return userRating2;
     }
     
     public String iniciodos() {
