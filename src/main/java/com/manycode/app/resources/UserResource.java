@@ -42,7 +42,7 @@ public class UserResource {
 				
     	
         User userRating2 = new User();
-        userRating2.initData(userId + ":" +iii + ":::" + iv);
+        userRating2.initData(userId + "::" + iv);
         return userRating2;
     }
     
